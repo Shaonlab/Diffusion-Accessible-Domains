@@ -1,0 +1,2 @@
+*.bed filter=lfs diff=lfs merge=lfs -text
+repearly_1Mb.bed filter=lfs diff=lfs merge=lfs -text
