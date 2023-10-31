@@ -6,6 +6,7 @@ This repository contains all the files required to replicate the figure 4(c) res
 
 See this on how to install Conda -> `https://conda.io/projects/conda/en/latest/user-guide/install/index.html`
 
+To create an environment using the .yml file in this repository:
 ```bash
 conda env create --file=environment.yml
 ```
