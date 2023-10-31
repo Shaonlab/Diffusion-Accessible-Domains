@@ -12,18 +12,18 @@ conda env create --file=environment.yml
 ```
 
 ## Usage
-
+After installing `conda`, follow the steps below to run `script.r`:
 ```bash
-# to clone this repository to your local computer
+# Clone this repository to your local computer
 git clone https://github.com/Shaonlab/Diffusion-Accessible-Domains.git
 
-# create a conda environment using the environment file
+# Create a conda environment using the provided yml file
 conda env create --file=/path/to/environment.yml
 
-# activate the conda environment
+# Activate the conda environment
 conda activate hic_analysis
 
-# running the analysis script (-a and -b options indicate the median D(i1,i2) values for H3K27me3, without taking into account the HiC information)
+# Run the analysis script (-a and -b options indicate the median D(i1,i2) values for H3K27me3, without taking into account the HiC information)
 Rscript script.r -e /path/to/repearly_1Mb.bed -l /path/to/replate_1Mb.bed  -c /path/to/HiC_matrices/ -o /path/to/output/directory -m H3K27me3 -a 0.434 -b 0.617
 
 # to know more about the parameters passed to the R-script
